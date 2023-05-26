@@ -10,18 +10,8 @@ html {
 
 #header-title a,
 #header-nav ul li a {
-    color: black;
+    color: navy;
     font-weight: bold;
-}
-
-.flex-about-me-container {
-    display: flex;
-    flex-flow: row nowrap;
-
-}
-
-.flex-about-me-profile-item {
-    width: 40vw;
 }
 
 .flex-header-item-1 {
@@ -45,31 +35,20 @@ html {
 
 #header-title,
 #header-nav ul li,
-.profile ul li {
+.profile ul li,
+.flex-about-me-profile-item ul li {
     >a:link {
         text-decoration: none;
     }
-}
 
-#header-title,
-#header-nav ul li,
-.profile ul li {
     >a:visited {
         text-decoration: none;
     }
-}
 
-#header-title,
-#header-nav ul li,
-.profile ul li {
     >a:hover {
         text-decoration: none;
     }
-}
 
-#header-title,
-#header-nav ul li,
-.profile ul li {
     >a:active {
         text-decoration: none;
     }
@@ -80,17 +59,42 @@ html {
     list-style-type: none;
 }
 
+.flex-about-me-container {
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.flex-about-me-profile-item {
+    width: 40vw;
+}
+
+#avatar {
+    width: 100%;
+    height: auto;
+}
+
+#avatar-name {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.flex-about-me-profile-item ul li a {
+    font-weight: bold;
+    color: navy;
+}
+
+.flex-about-me-profile-item ul li {
+    text-align: center;
+}
+
 .flex-about-me-profile-item ul {
     padding-left: 0;
 }
 
 .flex-about-me-profile-item {
     margin-right: 2em;
-}
-
-#avatar {
-    width: 100%;
-    height: auto;
 }
 
 .grid-projects {
