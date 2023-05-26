@@ -6,121 +6,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oybek's Gitfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
     <header class="header">
-        <h1 id="header-logo">
-            <a class="header-logo-link" href="#">Oybek's Gitfolio</a>
-        </h1>
-        <nav id="header-nav">
-            <ul class="header-nav-list">
-                <li class="header-nav-list-item"><a href="#about-me">About Me</a></li>
-                <li class="header-nav-list-item"><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
+        <div class="flex-header-container">
+            <div class="flex-header-item flex-header-item-1">
+                <h1 id="header-title">
+                    <a href="#">Welcome to Oybek's Gitfolio!</a>
+                </h1>
+            </div>
+            <div class="flex-header-item flex-header-item-2">
+                <nav id="header-nav">
+                    <ul>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <section id="about-me">
         <h2>About Me</h2>
-        <div class="profile">
-            <img src="assets/images/avatar.jpg" alt="Oybek's Avatar" id="avatar">
-            <ul>
-                <li>
-                    <h3 id="avatar-name">Oybek Kamolov</h3>
-                </li>
-                <li>Email: <a href="mailto:okamolov97@gmail.com">okamolov97@gmail.com</a> </li>
-                <li><a href="https://github.com/mobunto" class="site-profiles">GitHub</a> | <a
-                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="site-profiles">LinkedIn</a></li>
-            </ul>
-        </div>
-        <div class="my-bio">
-            <article>
-                <h3>Biography</h3>
-                <p>Hello there! My name is Oybek, and I am a Central Asian immigrant who moved to the United States in
-                    December 2007 from one of the only two double-landlocked countries called Uzbekistan.</p>
-                <p>Ever since I was a kid, I loved tinkering around with the family computer. I would often break
-                    something within the operating system but would always find ways to fix it with the power of Google!
-                    I'd often spend my free time reading and watching videos about the latest tech (gadgets, computer
-                    hardware, tech leaks, etc.) and playing video games.</p>
-                <p>Eventually, I built my first computer when I was 14 and started learning programming through
-                    Codecademy. Afterwards, I would build computers for others or help them pick out parts.</p>
-                <p>After graduating high school, I designed a 4-zoned sprinkler control system that was controlled by a
-                    Raspberry Pi with a custom GUI. Through the GUI, the user could set a schedule and view real-time
-                    weather data, which the controller used to save water on rainy days.</p>
-                <p>Currently, I work as a Controls Technical Trainer at the Amazon Center of Excellence. As a trainer,
-                    my main task is to train new and veteran technicians/engineers on the various control systems used
-                    to automate Amazon warehouses. Alongside my main task, I also travel to warehouses to provide
-                    controls support.</p>
-                <p>Before becoming a trainer, I helped launch KCVG, an Amazon Air Hub, as a Controls Technician. Before
-                    launch, I worked with stakeholders to inspect control cabinets, create a flow map of the building,
-                    and associate the Measuring Points (MPs) in the flow map to physical assets. After launch, I
-                    worked on multiple projects with operations, maintenance team, automation engineers, and the systems
-                    integrators to make improvements to the control systems and metrics on site.</p>
-            </article>
+        <div class="flex-about-me-container">
+            <div class="flex-about-me-profile-item">
+                <img src="assets/images/avatar.jpg" alt="Oybek's Avatar" id="avatar">
+                <ul>
+                    <li>
+                        <h3 id="avatar-name">Oybek Kamolov</h3>
+                    </li>
+                    <li>Email: <a href="mailto:okamolov97@gmail.com">okamolov97@gmail.com</a> </li>
+                    <li><a href="https://github.com/mobunto" class="site-profiles">GitHub</a> | <a
+                            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="site-profiles">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="flex-about-me-my-bio-item">
+                <article>
+                    <h3>Biography</h3>
+                    <p>Hello there! My name is Oybek, and I am a Central Asian immigrant who moved to the United States
+                        in
+                        December 2007 from one of the only two double-landlocked countries called Uzbekistan.</p>
+                    <p>Ever since I was a kid, I loved tinkering around with the family computer. I would often break
+                        something within the operating system but would always find ways to fix it with the power of
+                        Google!
+                        I'd often spend my free time reading and watching videos about the latest tech (gadgets,
+                        computer
+                        hardware, tech leaks, etc.) and playing video games.</p>
+                    <p>Eventually, I built my first computer when I was 14 and started learning programming through
+                        Codecademy. Afterwards, I would build computers for others or help them pick out parts.</p>
+                    <p>After graduating high school, I designed a 4-zoned sprinkler control system that was controlled
+                        by a
+                        Raspberry Pi with a custom GUI. Through the GUI, the user could set a schedule and view
+                        real-time
+                        weather data, which the controller used to save water on rainy days.</p>
+                    <p>Currently, I work as a Controls Technical Trainer at the Amazon Center of Excellence. As a
+                        trainer,
+                        my main task is to train new and veteran technicians/engineers on the various control systems
+                        used
+                        to automate Amazon warehouses. Alongside my main task, I also travel to warehouses to provide
+                        controls support.</p>
+                    <p>Before becoming a trainer, I helped launch KCVG, an Amazon Air Hub, as a Controls Technician.
+                        Before
+                        launch, I worked with stakeholders to inspect control cabinets, create a flow map of the
+                        building,
+                        and associate the Measuring Points (MPs) in the flow map to physical assets. After launch, I
+                        worked on multiple projects with operations, maintenance team, automation engineers, and the
+                        systems
+                        integrators to make improvements to the control systems and metrics on site.</p>
+                </article>
+            </div>
         </div>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <article class="project">
-            <h3><a href="https://github.com/mobunto">Project 1 Name</a></h3>
-            <article>
-                <h4>Description</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo adipisci accusantium obcaecati quae
-                    reprehenderit quam officia? Vero praesentium quaerat dolorem quia consectetur iste asperiores
-                    laboriosam neque exercitationem ullam animi reiciendis porro doloremque, repudiandae saepe cumque.
-                    Necessitatibus possimus, fuga sunt porro repellat ullam tenetur praesentium nisi quae recusandae
-                    reiciendis? Exercitationem, dolorum!</p>
-            </article>
-            <article>
-                <h4>Tech Stack</h4>
-                <ul>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                </ul>
-            </article>
-        </article>
-        <article class="project">
-            <h3><a href="https://github.com/mobunto">Project 2 Name</a></h3>
-            <article>
-                <h4>Description</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo adipisci accusantium obcaecati quae
-                    reprehenderit quam officia? Vero praesentium quaerat dolorem quia consectetur iste asperiores
-                    laboriosam neque exercitationem ullam animi reiciendis porro doloremque, repudiandae saepe cumque.
-                    Necessitatibus possimus, fuga sunt porro repellat ullam tenetur praesentium nisi quae recusandae
-                    reiciendis? Exercitationem, dolorum!</p>
-            </article>
-            <article>
-                <h4>Tech Stack</h4>
-                <ul>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                </ul>
-            </article>
-        </article>
-        <article class="project">
-            <h3><a href="https://github.com/mobunto">Project 3 Name</a></h3>
-            <article>
-                <h4>Description</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo adipisci accusantium obcaecati quae
-                    reprehenderit quam officia? Vero praesentium quaerat dolorem quia consectetur iste asperiores
-                    laboriosam neque exercitationem ullam animi reiciendis porro doloremque, repudiandae saepe cumque.
-                    Necessitatibus possimus, fuga sunt porro repellat ullam tenetur praesentium nisi quae recusandae
-                    reiciendis? Exercitationem, dolorum!</p>
-            </article>
-            <article>
-                <h4>Tech Stack</h4>
-                <ul>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                </ul>
-            </article>
-        </article>
+        <div class="grid-projects">
+            <div class="grid-projects-item-1">
+                <article class="project">
+                    <h3><a href="https://github.com/mobunto">Project 1 Name</a></h3>
+                    <article>
+                        <h4>Description</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque saepe sint praesentium quasi
+                            vel
+                            odit cupiditate itaque rerum ex accusantium.</p>
+                    </article>
+                    <article>
+                        <h4>Tech Stack</h4>
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                        </ul>
+                    </article>
+                </article>
+            </div>
+            <div class="grid-projects-item-2">
+                <article class="project">
+                    <h3><a href="https://github.com/mobunto">Project 2 Name</a></h3>
+                    <article>
+                        <h4>Description</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate hic expedita eius modi
+                            delectus sed nostrum, assumenda aliquam quos corporis.</p>
+                    </article>
+                    <article>
+                        <h4>Tech Stack</h4>
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                        </ul>
+                    </article>
+                </article>
+            </div>
+            <div class="grid-projects-item-3">
+                <article class="project">
+                    <h3><a href="https://github.com/mobunto">Project 3 Name</a></h3>
+                    <article>
+                        <h4>Description</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id harum eius mollitia aliquid dicta
+                            vel
+                            voluptatibus, impedit eos voluptate quas.</p>
+                    </article>
+                    <article>
+                        <h4>Tech Stack</h4>
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                        </ul>
+                    </article>
+                </article>
+            </div>
+        </div>
     </section>
     <footer><small>Copyright © 2023 Oybek Kamolov. All Rights Reserved.</small></footer>
 </body>

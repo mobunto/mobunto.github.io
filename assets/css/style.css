@@ -1,0 +1,108 @@
+html {
+    background-color: lightgray;
+}
+
+.flex-header-container {
+    display: flex;
+    flex-flow: row wrap;
+    background-image: linear-gradient(to bottom right, #DECBA4, #3E5151);
+}
+
+#header-title a,
+#header-nav ul li a {
+    color: black;
+    font-weight: bold;
+}
+
+.flex-about-me-container {
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.flex-about-me-profile-item {
+    width: 40vw;
+}
+
+.flex-header-item-1 {
+    flex: 5;
+}
+
+.flex-header-item-2 {
+    flex: 1;
+}
+
+.header {
+    position: sticky;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+#header-title {
+    text-align: center;
+}
+
+#header-title,
+#header-nav ul li,
+.profile ul li {
+    >a:link {
+        text-decoration: none;
+    }
+}
+
+#header-title,
+#header-nav ul li,
+.profile ul li {
+    >a:visited {
+        text-decoration: none;
+    }
+}
+
+#header-title,
+#header-nav ul li,
+.profile ul li {
+    >a:hover {
+        text-decoration: none;
+    }
+}
+
+#header-title,
+#header-nav ul li,
+.profile ul li {
+    >a:active {
+        text-decoration: none;
+    }
+}
+
+.flex-header-item-2 ul,
+.flex-about-me-profile-item ul li {
+    list-style-type: none;
+}
+
+.flex-about-me-profile-item ul {
+    padding-left: 0;
+}
+
+.flex-about-me-profile-item {
+    margin-right: 2em;
+}
+
+#avatar {
+    width: 100%;
+    height: auto;
+}
+
+.grid-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(150px, auto);
+    gap: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    bottom: 0;
+}
