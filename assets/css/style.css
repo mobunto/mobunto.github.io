@@ -70,6 +70,9 @@ html {
 }
 
 #avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     height: auto;
 }
@@ -102,6 +105,17 @@ html {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: minmax(150px, auto);
     gap: 5px;
+}
+
+.project h3 {
+    text-align: center;
+}
+
+.project-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 
 footer {
